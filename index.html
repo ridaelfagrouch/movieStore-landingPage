@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="menu-icon">
+			   <span class="fas fa-bars"></span>
+			</div>
+			<div class="logo">
+			   Movie<span class="store">Store</span>
+			</div>
+			<div class="nav-items">
+			   <li><a href="#">Home</a></li>
+			   <li><a href="#">Genre</a></li>
+			   <li><a href="#">Country</a></li>
+			   <li><a href="#">Movies</a></li>
+			   <li><a href="#">TV-Series</a></li>
+			   <li><a href="#">Top IMDb</a></li>
+			</div>
+			<div class="search-icon">
+			   <span class="fas fa-search"></span>
+			</div>
+			<div class="cancel-icon">
+			   <span class="fas fa-times"></span>
+			</div>
+			<form action="#">
+			   <input type="search" class="search-data" placeholder="Search" required>
+			   <button type="submit" class="fas fa-search"></button>
+			</form>
+		 </nav>
+	</header>
+	 <script>
+		const menuBtn = document.querySelector(".menu-icon span");
+		const searchBtn = document.querySelector(".search-icon");
+		const cancelBtn = document.querySelector(".cancel-icon");
+		const items = document.querySelector(".nav-items");
+		const form = document.querySelector("form");
+		menuBtn.onclick = ()=>{
+		  items.classList.add("active");
+		  menuBtn.classList.add("hide");
+		  searchBtn.classList.add("hide");
+		  cancelBtn.classList.add("show");
+		}
+		cancelBtn.onclick = ()=>{
+		  items.classList.remove("active");
+		  menuBtn.classList.remove("hide");
+		  searchBtn.classList.remove("hide");
+		  cancelBtn.classList.remove("show");
+		  form.classList.remove("active");
+		  cancelBtn.style.color = "#ff3d00";
+		}
+		searchBtn.onclick = ()=>{
+		  form.classList.add("active");
+		  searchBtn.classList.add("hide");
+		  cancelBtn.classList.add("show");
+		}
+	 </script>
+	 <section class="movies-store1">
+		 <div class="category">
+			 <span class="div-category">Recommended</span>
+			 <a href="#" title="Recommended-1" id="category-link1">Movies</a>
+			 <a href="#" title="Recommended-2" id="category-link2">TV Shows</a>
+			 <a href="#" title="Recommended-3" id="category-link3">Trending</a>
+		</div>
+		 <hr>
+		 <div class="category-card">
+			 <ul id="superheros">
+				<li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				   <img src="images/download (6).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo" id="first-li">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (3).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					 <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (4).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					 <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					 <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (6).jpeg" alt="movie-name" />
+					<div class="movie-info">
+					 <h4>movie-name</h4>
+					 <h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (2).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (3).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (4).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo" id="first-li">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+					<div class="movie-info">
+					 <h4>movie-name</h4>
+					 <h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (3).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (4).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					  <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					 <img src="images/download (2).jpeg" alt="movie-name" />
+					 <div class="movie-info">
+						 <h4>movie-name</h4>
+						 <h5>2022 _ 100 min</h5>
+					 </div>
+					 <div class="heroinfo">
+						<h3>movie-name</h3>
+						<p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+						<a href="#" title="movie-name">Watch now</a>
+					 </div>
+				  </li>
+				  <li>
+					  <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (6).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					 <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+			 </ul>
+		</div>
+	</section>
+	<section class="movies-store1">
+		<div class="category"><span class="div-category">Latest Movies</span></div>
+		<hr>
+		<div class="category-card">
+			<ul id="superheros">
+			   <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>  
+				<img src="images/download (6).jpeg" alt="movie-name" />
+				  <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+				  </div>
+				  <div class="heroinfo" id="first-li">
+					 <h3>movie-name</h3>
+					 <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					 <a href="#" title="movie-name">Watch now</a>
+				  </div>
+			   </li>
+			   <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>   
+				<img src="images/download (3).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					   <h4>movie-name</h4>
+					   <h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (4).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					   <h4>movie-name</h4>
+					   <h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					   <h4>movie-name</h4>
+					   <h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (6).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (2).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (3).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (4).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo" id="first-li">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (3).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (4).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+					<i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (2).jpeg" alt="movie-name" />
+					<div class="movie-info">
+						<h4>movie-name</h4>
+						<h5>2022 _ 100 min</h5>
+					</div>
+					<div class="heroinfo">
+					   <h3>movie-name</h3>
+					   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					   <a href="#" title="movie-name">Watch now</a>
+					</div>
+				 </li>
+				 <li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (6).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					   <h4>movie-name</h4>
+					   <h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+				<li>
+				   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+					<img src="images/download (5).jpeg" alt="movie-name" />
+				   <div class="movie-info">
+					   <h4>movie-name</h4>
+					   <h5>2022 _ 100 min</h5>
+				   </div>
+				   <div class="heroinfo">
+					  <h3>movie-name</h3>
+					  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+					  <a href="#" title="movie-name">Watch now</a>
+				   </div>
+				</li>
+			</ul>
+	   </div>
+   </section>
+   <section class="movies-store1">
+	<div class="category"><span class="div-category">Latest TV-Series</span></div>
+	<hr>
+	<div class="category-card">
+		<ul id="superheros">
+		   <li>
+			<i id="play-icon" class="fa-solid fa-circle-play"></i>  
+			<img src="images/download (6).jpeg" alt="movie-name" />
+			  <div class="movie-info">
+			   <h4>movie-name</h4>
+			   <h5>2022 _ 100 min</h5>
+			  </div>
+			  <div class="heroinfo" id="first-li">
+				 <h3>movie-name</h3>
+				 <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				 <a href="#" title="movie-name">Watch now</a>
+			  </div>
+		   </li>
+		   <li>
+			<i id="play-icon" class="fa-solid fa-circle-play"></i>   
+			<img src="images/download (3).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (6).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				<h4>movie-name</h4>
+				<h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (2).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (3).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo" id="first-li">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				<h4>movie-name</h4>
+				<h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (3).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (2).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (6).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+		</ul>
+   </div>
+</section>
+<section class="movies-store1">
+	<div class="category"><span class="div-category">Requested</span></div>
+	<hr>
+	<div class="category-card">
+		<ul id="superheros">
+		   <li>
+			<i id="play-icon" class="fa-solid fa-circle-play"></i>  
+			<img src="images/download (6).jpeg" alt="movie-name" />
+			  <div class="movie-info">
+			   <h4>movie-name</h4>
+			   <h5>2022 _ 100 min</h5>
+			  </div>
+			  <div class="heroinfo" id="first-li">
+				 <h3>movie-name</h3>
+				 <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				 <a href="#" title="movie-name">Watch now</a>
+			  </div>
+		   </li>
+		   <li>
+			<i id="play-icon" class="fa-solid fa-circle-play"></i>   
+			<img src="images/download (3).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (6).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				<h4>movie-name</h4>
+				<h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (2).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (3).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo" id="first-li">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				<h4>movie-name</h4>
+				<h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (3).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (4).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+				<i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (2).jpeg" alt="movie-name" />
+				<div class="movie-info">
+					<h4>movie-name</h4>
+					<h5>2022 _ 100 min</h5>
+				</div>
+				<div class="heroinfo">
+				   <h3>movie-name</h3>
+				   <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				   <a href="#" title="movie-name">Watch now</a>
+				</div>
+			 </li>
+			 <li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (6).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+			<li>
+			   <i id="play-icon" class="fa-solid fa-circle-play"></i>
+				<img src="images/download (5).jpeg" alt="movie-name" />
+			   <div class="movie-info">
+				   <h4>movie-name</h4>
+				   <h5>2022 _ 100 min</h5>
+			   </div>
+			   <div class="heroinfo">
+				  <h3>movie-name</h3>
+				  <p>Spider-Man has spider like abilities including superhuman strength and the ability to cling to most surfaces. He is also extremely agile and ....</p>
+				  <a href="#" title="movie-name">Watch now</a>
+			   </div>
+			</li>
+		</ul>
+   </div>
+</section>
+</body>
+</html>
