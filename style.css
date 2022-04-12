@@ -427,7 +427,6 @@ ul#move li:nth-child(5) {
 
   .category-card{
     max-width: 1750px;
-    height: auto;
     display: flex;
     padding-top: 50px;
 	  background: #171c24;
@@ -559,15 +558,6 @@ ul#move li:nth-child(5) {
     display: block;
     transform: scale(1.1);
   }
-
-  /* #superheros li:hover #first-li { 
-    box-shadow:0 5px 10px #888; 
-    -webkit-box-shadow:0 5px 10px #888; 
-    margin:-260px 0 0 240px !important;
-    z-index: 999;
-    display: block;
-    transform: scale(1.1);
-  } */
    
   
   .heroinfo h3 {
@@ -599,3 +589,56 @@ ul#move li:nth-child(5) {
   }
 
   /* *********************** */
+
+  footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding:100px 50px;
+    margin-top: 50px;
+  }
+
+  .footer-div{
+    max-width: 1500px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .left_footer{
+    max-width: 700px;
+    display: flex;
+    padding:0 50px;
+    justify-content:center;
+    flex-direction: column;
+    font-weight: bold;
+  }
+
+  .right_footer{
+    max-width: 700px;
+    justify-content:center;
+    display: flex;
+    margin-top:50px;
+  }
+
+  .right_footer li a{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s ease;
+  }
+  .right_footer li{
+    list-style: none;
+    line-height: 2;
+  }
+
+ .p_footer{
+    font-size: 40px;
+  }
+
+  .store_footer{
+    color: red;
+  }
+
+  .right_footer li a:hover{
+    color: #ff3d00;
+  }
