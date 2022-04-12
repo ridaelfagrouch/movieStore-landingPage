@@ -416,23 +416,20 @@ ul#move li:nth-child(5) {
 }
 
 .movies-store1{
-  max-width: 1550px;
+  max-width: 1750px;
   flex-direction: column;
   position: relative;
   padding-left: auto;
-  padding-right: auto;
+	padding-right: auto;
   top: 30px;
   margin: 0 auto;
 }
 
   .category-card{
-    max-width: 1550px;
+    max-width: 1750px;
     height: auto;
     display: flex;
     padding-top: 50px;
-	  padding-left: auto;
-	  padding-right: auto;
-    margin: 0 auto;
 	  background: #171c24;
   }
 .category{
@@ -498,14 +495,7 @@ ul#move li:nth-child(5) {
     display:inline; 
     float:left;
     margin-bottom: 50px;
-    perspective: 500;
-    -webkit-perspective: 500;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition-property: perspective;
-    -webkit-transition-property: perspective;
-    transition-duration: 0.5s; 
-    -webkit-transition-duration: 0.5s; 
+
   }
   
   #superheros li:hover
@@ -551,7 +541,6 @@ ul#move li:nth-child(5) {
     margin:-100px 0 0 15px; 
     position:absolute;
     display: none;
-    z-index: 10;
     box-shadow:0 20px 40px #888; 
     -moz-box-shadow:0 20px 40px #888; 
     -webkit-box-shadow:0 20px 40px #888;
@@ -571,14 +560,14 @@ ul#move li:nth-child(5) {
     transform: scale(1.1);
   }
 
-  #superheros li:hover #first-li { 
+  /* #superheros li:hover #first-li { 
     box-shadow:0 5px 10px #888; 
     -webkit-box-shadow:0 5px 10px #888; 
     margin:-260px 0 0 240px !important;
     z-index: 999;
     display: block;
     transform: scale(1.1);
-  }
+  } */
    
   
   .heroinfo h3 {
